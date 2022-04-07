@@ -17,5 +17,5 @@ func Info(message string) {
 }
 
 func Warn(message string) {
-	color.Yellow.Printf("INFO: %s\n", message)
+	color.Yellow.Printf("WARNING: %s\n", message)
 }
