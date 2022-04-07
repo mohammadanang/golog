@@ -15,3 +15,7 @@ func Error(message string) {
 func Info(message string) {
 	color.Cyan.Printf("INFO: %s\n", message)
 }
+
+func Warn(message string) {
+	color.Yellow.Printf("INFO: %s\n", message)
+}
