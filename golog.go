@@ -2,6 +2,6 @@ package golog
 
 import "github.com/gookit/color"
 
-func Test() {
-	color.Redp("Simple to use color")
+func Success(message string) {
+	color.Success.Print(message, "\n")
 }
