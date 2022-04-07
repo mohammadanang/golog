@@ -1,11 +1,27 @@
 package golog
 
-import "github.com/gookit/color"
+import (
+	"github.com/gookit/color"
+)
 
 func Success(message string) {
-	color.Success.Print(message, "\n")
+	if message == "" {
+		message = ""
+	}
+	color.Success.Tips(message)
+}
 
-	color.Success.Prompt(message, "\n")
+func Error(message string) {
+	if message == "" {
+		message = ""
+	}
+	color.Danger.Tips(message)
+}
 
-	color.Success.Tips(message, "\n")
+func Info(message string) {
+	if message == "" {
+		message = ""
+	}
+	color.Info.Tips(message)
+	color.Primary.Tips(message)
 }
