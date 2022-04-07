@@ -5,13 +5,13 @@ import (
 )
 
 func Success(message string) {
-	color.Success.Tips(message)
+	color.Green.Printf("SUCCESS: %s\n", message)
 }
 
 func Error(message string) {
-	color.Danger.Tips(message)
+	color.Red.Printf("ERROR: %s\n", message)
 }
 
 func Info(message string) {
-	color.Primary.Print("INFO:", message, "\n")
+	color.Cyan.Printf("INFO: %s\n", message)
 }
