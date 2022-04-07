@@ -1,7 +1,7 @@
 package golog
 
-import "fmt"
+import "github.com/gookit/color"
 
 func Test() {
-	fmt.Print("Helloo...\nWorld\n")
+	color.Redp("Simple to use color")
 }
